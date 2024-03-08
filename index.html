@@ -3,121 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stlye.css">
     <title>SpongeBob SquarePants</title>
 </head>
 <body>
 <!-- Header Section -->
     <header>
         <h1 class="hidden">All about the SpongeBob's Squad</h1>
-        <img src="#" alt="SpongeBob SquarePants's Logo">
+        <img id="main-logo" src="./images/sp-logo.png" alt="SpongeBob SquarePants's Logo">
     </header>
 
 <!-- Body Section -->
+    <div id="main">
     <main>
+        
 <!-- Characters -->
         <nav class="character_nav">
             <ul class="characters">
                 <li>
                     <a href="#lightbox">
                         <div class="sprite" id="patrick"> </div>
-                        <h3>SpongeBob SquarePants</h3>
+                        <h3 class="name">Patrick Star</h3>
                     </a>
                 </li>
                 <li>
                     <a href="#lightbox2">
                         <div class="sprite" id="spongebob"> </div>
-                        <h3>Patrick Star</h3>
+                        <h3 class="name">SpongeBob SquarePants</h3>
                     </a>
                 </li>
                 <li>
                     <a href="#lightbox3">
                         <div class="sprite" id="squidward"> </div>
-                        <h3>Sheldon J. Plankton</h3>
+                        <h3 class="name">Squidward J.Q. Tentacles</h3>
                     </a>
                 </li>
                 <li>
                     <a href="#lightbox4">
                         <div class="sprite" id="sandy"> </div>
-                        <h3>Squidward J.Q. Tentacles</h3>
+                        <h3 class="name">Sandy Cheeks</h3>
                     </a>
                 </li>
                 <li>
                     <a href="#lightbox5">
                         <div class="sprite" id="mrkrabs"> </div>
-                        <h3>Eugene Harold Krabs</h3>
+                        <h3 class="name">Eugene Harold Krabs</h3>
                     </a>
                 </li>
                 <li>
                     <a href="#lightbox6">
                         <div class="sprite" id="plankton"> </div>
-                        <h3>Sandy Cheeks</h3>
+                        <h3 class="name">Sheldon J. Plankton</h3>
                     </a>
                 </li>
             </ul>
         </nav>
+
 <!-- Instruction -->
-        <h3>Choose your ocean college!</h3>
-        <p>Use the mouse hover / click to discover about each SpongeBob SquarePants' character</p>
+        <section id="instruction">
+            <h3>Choose your ocean college!</h3>
+            <p>Use the mouse hover / click to discover about each SpongeBob SquarePants' character</p>
+        </section>
     </main>
+</div>
     
-    <footer>
+    <footer class="sticky-footer">
         All Images &copy; Nickelodeon
     </footer>
 
 <!-- Ligthbox Section -->
     <section class="lightbox" id="lightbox">
-    <a href="#" class="lightbox_close"></a>
-    <article>
-        <h3 class="lb_heading">Patrick Star</h3>
-        <p class="lb_text">
-            Patrick Star is SpongeBob's best friend. He is a pink, overweight sea star who lives under a rock. Patrick is known for his low intelligence, laziness, and love for jellyfishing with SpongeBob. Despite his dimwitted nature, Patrick is good-hearted and always means well.
-        </p>
-    </article>
+        <div class="lb_box">
+            <a href="#" class="lightbox_close">X</a>
+            <img src="./images/patrick_LB-c.png" alt="Patrick">
+            <article>
+                <h3 class="lb_heading">Patrick Star</h3>
+                <p class="lb_text">
+                    Patrick Star is SpongeBob's best friend. He is a pink, overweight sea star who lives under a rock. Patrick is known for his low intelligence, laziness, and love for jellyfishing with SpongeBob. Despite his dimwitted nature, Patrick is good-hearted and always means well.
+                </p>
+            </article>
+        </div>
     </section>
     <section class="lightbox" id="lightbox2">
-    <a href="#" class="lightbox_close"></a>
-    <article>
-        <h3 class="lb_heading">SpongeBob SquarePants</h3>
-        <p class="lb_text">
-            SpongeBob SquarePants is an optimistic and energetic sea sponge who lives in a pineapple under the sea. He works as a fry cook at the Krusty Krab, where he is exceptionally skilled at making Krabby Patties. SpongeBob is known for his square shape, bright yellow color, and enthusiastic personality. He loves going on adventures and trying new things, often with his best friend, Patrick Star.
-        </p>
-    </article>
+        <div class="lb_box">
+            <a href="#" class="lightbox_close">X</a>
+            <img src="./images/spongebob_LB-c.png" alt="SpongeBob">
+            <article>
+                <h3 class="lb_heading">SpongeBob SquarePants</h3>
+                <p class="lb_text">
+                    SpongeBob SquarePants is an optimistic and energetic sea sponge who lives in a pineapple under the sea. He works as a fry cook at the Krusty Krab, where he is exceptionally skilled at making Krabby Patties. SpongeBob is known for his square shape, bright yellow color, and enthusiastic personality. He loves going on adventures and trying new things, often with his best friend, Patrick Star.
+                </p>
+            </article>
+        </div>
     </section>
     <section class="lightbox" id="lightbox3">
-    <a href="#" class="lightbox_close"></a>
-        <article>
-            <h3 class="lb_heading">Squidward J.Q. Tentacles</h3>
-            <p class="lb_text">
-                Squidward Tentacles is SpongeBob's neighbor and coworker at the Krusty Krab. He is a turquoise-colored octopus with a pretentious attitude and a love for art and music. Squidward is often annoyed by SpongeBob and Patrick's antics and dreams of a peaceful and sophisticated life away from them.
-            </p>
-        </article>
+        <div class="lb_box">
+            <a href="#" class="lightbox_close">X</a>
+            <img src="./images/squidward_LB-c.png" alt="Squidward">
+            <article>
+                <h3 class="lb_heading">Squidward J.Q. Tentacles</h3>
+                <p class="lb_text">
+                    Squidward Tentacles is SpongeBob's neighbor and coworker at the Krusty Krab. He is a turquoise-colored octopus with a pretentious attitude and a love for art and music. Squidward is often annoyed by SpongeBob and Patrick's antics and dreams of a peaceful and sophisticated life away from them.
+                </p>
+            </article>
+        </div>
     </section>
     <section class="lightbox" id="lightbox4">
-    <a href="#" class="lightbox_close"></a>
-        <article>
-            <h3 class="lb_heading">Sandy Cheeks</h3>
-            <p class="lb_text">
-                Sandy Cheeks is a squirrel from Texas who lives in an air dome under the sea. She is an inventor and scientist known for her Texas traits, including her strong accent and rodeo skills. Sandy is adventurous and loves practicing karate with SpongeBob. She wears a diving suit to breathe underwater.
-            </p>
-        </article>
+        <div class="lb_box">
+            <a href="#" class="lightbox_close">X</a>
+            <img src="./images/sandy_LB-c.png" alt="Sandy">
+            <article>
+                <h3 class="lb_heading">Sandy Cheeks</h3>
+                <p class="lb_text">
+                    Sandy Cheeks is a squirrel from Texas who lives in an air dome under the sea. She is an inventor and scientist known for her Texas traits, including her strong accent and rodeo skills. Sandy is adventurous and loves practicing karate with SpongeBob. She wears a diving suit to breathe underwater.
+                </p>
+            </article>
+          </div>
     </section>
     <section class="lightbox" id="lightbox5">
-    <a href="#" class="lightbox_close"></a>
-        <article>
-            <h3 class="lb_heading">Eugene Harold Krabs</h3>
-            <p class="lb_text">
-                Eugene H. Krabs is the greedy owner of the Krusty Krab and SpongeBob's boss. He is a red crab who is obsessed with money and will go to great lengths to make a profit. Mr. Krabs is a single father to his teenage daughter, Pearl. Despite his greed, Mr. Krabs cares deeply for his employees and his restaurant.
-            </p>
-        </article>
+        <div class="lb_box">
+        <a href="#" class="lightbox_close">X</a>
+            <img src="./images/mrkrab_LB-c.png" alt="Mr.Krabs">
+            <article>
+                <h3 class="lb_heading">Eugene Harold Krabs</h3>
+                <p class="lb_text">
+                    Eugene H. Krabs is the greedy owner of the Krusty Krab and SpongeBob's boss. He is a red crab who is obsessed with money and will go to great lengths to make a profit. Mr. Krabs is a single father to his teenage daughter, Pearl. Despite his greed, Mr. Krabs cares deeply for his employees and his restaurant.
+                </p>
+            </article>
+        </div>
     </section>
     <section class="lightbox" id="lightbox6">
-    <a href="#" class="lightbox_close"></a>
-        <article>
-            <h3 class="lb_heading">Sheldon J. Plankton</h3>
-            <p class="lb_text">
-                Sheldon J. Plankton is a small, green planktonic copepod and the main antagonist of the series. He runs the Chum Bucket, a failing restaurant across the street from the Krusty Krab. Plankton's life goal is to steal the Krabby Patty formula from Mr. Krabs. He is constantly devising plans to achieve this, though they invariably fail.
-            </p>
-        </article>
+        <div class="lb_box">
+            <a href="#" class="lightbox_close">X</a>
+            <img src="./images/plankton_LB-c.png" alt="Sheldon">
+            <article>
+                <h3 class="lb_heading">Sheldon J. Plankton</h3>
+                <p class="lb_text">
+                    Sheldon J. Plankton is a small, green planktonic copepod and the main antagonist of the series. He runs the Chum Bucket, a failing restaurant across the street from the Krusty Krab. Plankton's life goal is to steal the Krabby Patty formula from Mr. Krabs. He is constantly devising plans to achieve this, though they invariably fail.
+                </p>
+            </article>
+        </div>
     </section>
 </body>
 </html>

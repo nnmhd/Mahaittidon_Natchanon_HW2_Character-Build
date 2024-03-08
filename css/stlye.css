@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff558;
+    color: black;
+}
+
+header {
+    background-color: #fff558;
+    padding: 10px 0;
+}
+
+#main-logo {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.characters {
+    max-width: 1200px;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    font-size: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+
+.characters li {
+    display: flex;
+    height: 450px;
+    background-color: white;
+    border: solid 3px #fff558;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 400px 0 0 #fff558 inset;
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+.characters li:hover {
+    box-shadow: 0 500px 0 0 #fff558 inset;
+}
+
+.characters li a {
+    text-decoration: none;
+    color: black;
+}
+
+.name {
+    padding: 12px;
+    font-size: 1.5rem;
+}
+
+#instruction {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+    margin: 30px;
+}
+
+
+/* Sprite */
+
+.sprite {
+    width: 395px;
+    height: 400px;
+    background-image: url(../images/sprite-spongebob.png);
+    transition: background-position-y 0.2s;
+}
+
+#spongebob {
+    background-position: -400px 0;
+}
+
+#squidward {
+    background-position: -801px 0;
+}
+
+#sandy {
+    background-position: -1200px 0;
+}
+
+#mrkrabs {
+    background-position: -1600px 0;
+}
+
+#plankton {
+    background-position: -2000px 0;
+}
+
+#patrick:hover, #spongebob:hover, #squidward:hover, #sandy:hover, #mrkrabs:hover, #plankton:hover {
+    background-position-y: 399px;
+    transform: perspective(17px);
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 2rem;
+}
+
+.sticky-footer {
+    position: sticky;
+    top: 100%;
+    height: 10%;
+    background-color: #D1944C;
+}
+
+/* Light Box */
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(240, 248,255, 0.95);
+    display: none;
+    grid-template-columns: repeat(2 1fr);
+}
+
+.lb_box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.lb_box article {
+    display: grid;
+    grid-column: 2/3;
+    padding-right: 10%;
+    font-size: 5rem;
+    align-self: center;
+}
+
+.lb_box img {
+    height: 100vh;
+    grid-row: 1/3;
+}
+
+.lightbox_close {
+    position: relative;
+    grid-column: 2/3;
+    justify-self: end;
+    padding-right: 50px;
+    padding-top: 50px;
+    color: black;
+    font-size: 3rem;
+    text-decoration: none;
+    font-weight: 900;
+    transition: color .3s linear;
+}
+
+.lightbox_close:hover {
+    color: #fff558;
+}
+
+.lb_text {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-top: 40px;
+}
+
+.lightbox:target {
+    display: block;
+}
